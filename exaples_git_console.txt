@@ -295,4 +295,61 @@ Receiving objects: 100% (42896/42896), 27.43 MiB | 921.00 KiB/s, done.
 Resolving deltas: 100% (30363/30363), done.
 
 Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git2
-$ git commit -m "Sec commit"
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git2
+$ cd ..
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв
+$ cd test_git
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        exaples_git_console.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.43 KiB | 226.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anruaav/test.git
+   1858141..8f91814  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ cd ..
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв
+$ cd test_git_clonemy
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git_clonemy
+$ git clone https://github.com/anruaav/test.git
+Cloning into 'test'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 1), reused 9 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git_clonemy
+$
