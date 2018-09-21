@@ -1,0 +1,298 @@
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ git config --global user.name "Avryata Andriy"
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ git config --global user.email "anru.aav@gmail.com"
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=Avryata Andriy
+user.email=anru.aav@gmail.com
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ git help commit
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ cd d:\Work\_иру2\_04_WinForms_бв\test_git
+bash: cd: d:Work_иру2_04_WinForms_бвtest_git: No such file or directory
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 ~
+$ cd d:/Work/_иру2/_04_WinForms_бв/test_git
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git
+$ git init
+Initialized empty Git repository in D:/Work/_иру2/_04_WinForms_бв/test_git/.git/
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1.txt
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git add .
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.txt
+        new file:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.txt
+        new file:   2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git add 2.txt
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.txt
+        new file:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.txt
+        new file:   2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git add .
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1.txt
+        new file:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git commit -m "First commit"
+[master (root-commit) c7f1db6] First commit
+ 2 files changed, 5 insertions(+)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git remote add origin https://github.com/anruaav/test.git
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':anruaav
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/anruaav/test.git/'
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 280 bytes | 93.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/anruaav/test/pull/new/master
+remote:
+To https://github.com/anruaav/test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git add .
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   2.txt
+
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git commit -m "Sec commit"
+[master 1858141] Sec commit
+ 1 file changed, 2 insertions(+)
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 149.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anruaav/test.git
+   c7f1db6..1858141  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git (master)
+$ cd ..
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв
+$ cd test_git2
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git2
+$ https://github.com/jquery/jquery.git
+bash: https://github.com/jquery/jquery.git: No such file or directory
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git2
+$ git clone https://github.com/jquery/jquery.git
+Cloning into 'jquery'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 42896 (delta 0), reused 0 (delta 0), pack-reused 42893
+Receiving objects: 100% (42896/42896), 27.43 MiB | 921.00 KiB/s, done.
+Resolving deltas: 100% (30363/30363), done.
+
+Administrator@WIN-U25R2BFLCE7 MINGW64 /d/Work/_иру2/_04_WinForms_бв/test_git2
+$ git commit -m "Sec commit"
